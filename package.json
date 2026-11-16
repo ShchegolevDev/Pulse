@@ -1,13 +1,15 @@
 {
-  "name": "Pulse",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "name": "pulse",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Pulse — трекер задач (NestJS + Vue 3)",
+  "packageManager": "pnpm@10.15.0",
+  "engines": {
+    "node": ">=24"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "packageManager": "pnpm@10.15.0"
+  "scripts": {
+    "infra:up": "docker compose up -d",
+    "infra:down": "docker compose down",
+    "infra:logs": "docker compose logs -f"
+  }
 }

@@ -1,1 +1,14 @@
 CLAUDE.md
+# deps / build
+node_modules/
+dist/
+.turbo/
+
+# окружение (секреты не коммитим, шаблон — .env.example)
+.env
+.env.*
+!.env.example
+
+# прочее
+.DS_Store
+graphify-out/
